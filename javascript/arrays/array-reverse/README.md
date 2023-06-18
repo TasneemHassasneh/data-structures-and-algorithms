@@ -4,7 +4,7 @@
 The task is to write a function called reverseArray that takes an array as an argument and returns an array with elements in reversed order, without utilizing any of the built-in methods available in the language.
 
 ## Whiteboard Process
-![Reverse Array](/js//array-reverse/Reverse-Array.png)
+![Reverse Array](./Reverse-Array.png)
 
 ## Approach & Efficiency
 1. Initialize an empty list called reversed_arr to store the reversed elements.
@@ -37,5 +37,3 @@ output:
 [5, 4, 3, 2, 1]
 
 ```
-
-

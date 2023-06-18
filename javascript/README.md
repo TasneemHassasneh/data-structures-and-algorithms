@@ -4,12 +4,11 @@
 
 ### Tasble of Contents
 
-| #     | Description |
-| :---        |    :----:   |    
-| 1      |[Array-reverse](/js/array-reverse/README.md)       | 
-
-
-
+| #      |                         Description                          |
+| :----- |    :-----------------------------------------------------:   |
+| 1      |[Array-reverse](./arrays/array-reverse/README.md)             |
+| 2      |[Array-insert](./arrays/array-insert-shift/README.md)         |
+| 3      |[Array-binary-search](./arrays//array-binary-search/README.md)|
 
 ### Folder and Challenge Setup
 
