@@ -17,7 +17,7 @@ class LinkedList {
     if (this.head === null) {
       this.head = newNode;
     } else {
-      newNode.next = this.head;
+      newNode.next = this.head;//old
       this.head = newNode;
     }
   }
