@@ -17,7 +17,7 @@ class LinkedList {
     if (this.head === null) {
       this.head = newNode;
     } else {
-      newNode.next = this.head;//old
+      newNode.next = this.head;
       this.head = newNode;
     }
   }
@@ -31,6 +31,67 @@ class LinkedList {
       current = current.next;
     }
     return false;
+  }
+
+  append(newValue) {
+    /* Adds a new node with the given value to the end of the list. */
+    const newNode = new Node(newValue);
+
+    if (!this.head) {
+      this.head = newNode;
+    } else {
+      let current = this.head;
+      while (current.next) {
+        current = current.next;
+      }
+      current.next = newNode;
+    }
+  }
+
+  insertBefore(value, newValue) {
+    /* Adds a new node with the given new value immediately before the first node that has the specified value. */
+    const newNode = new Node(newValue);
+
+    if (!this.head) {
+      throw new Error("The list is empty.");
+    }
+
+    if (this.head.value === value) {
+      newNode.next = this.head;
+      this.head = newNode;
+    } else {
+      let current = this.head;
+      while (current.next) {
+        if (current.next.value === value) {
+          newNode.next = current.next;
+          current.next = newNode;
+          return;
+        }
+        current = current.next;
+      }
+      throw new Error(`The value ${value} is not found in the list.`);
+    }
+  }
+
+  insertAfter(value, newValue) {
+    /* Adds a new node with the given new value immediately after the first node that has the specified value. */
+    const newNode = new Node(newValue);
+
+    if (!this.head) {
+      throw new Error("The list is empty.");
+    }
+
+    let current = this.head;
+    while (current) {
+      if (current.value === value) {
+        newNode.next = current.next;
+        current.next = newNode;
+        return;
+      }
+      current = current.next;
+    }
+
+    throw new Error(`The value ${value} is not found in the list.`);
   }
 
   toString() {

@@ -9,6 +9,7 @@
 | 1      |[Array-reverse](./arrays/array-reverse/README.md)             |
 | 2      |[Array-insert](./arrays/array-insert-shift/README.md)         |
 | 3      |[Array-binary-search](./arrays//array-binary-search/README.md)|
+| 4      |[linked-list-insertions](./linked-list/index.js)
 
 ### Folder and Challenge Setup
 
