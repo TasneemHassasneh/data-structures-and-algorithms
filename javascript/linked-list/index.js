@@ -108,6 +108,30 @@ class LinkedList {
     linkedListStr += "NULL";
     return linkedListStr;
   }
+
+  kthFromEnd(k) {
+    if (k < 0 || !Number.isInteger(k)) {
+      throw new Error("k must be a positive integer.");
+    }
+
+    let slow = this.head;
+    let fast = this.head;
+
+
+    for (let i = 0; i < k; i++) {
+      if (fast === null) {
+        throw new Error("k is greater than the length of the linked list.");
+      }
+      fast = fast.next;
+    }
+
+    while (fast.next) {
+      slow = slow.next;
+      fast = fast.next;
+    }
+
+    return slow.value;
+  }
 }
 
 module.exports = LinkedList;
