@@ -120,5 +120,64 @@ describe('LinkedList', () => {
   });
 });
 
+describe('kthFromEnd', () => {
+
+    //! test 14: should return the node value that is k places from the tail of the linked list
+  it('should return the node value that is k places from the tail of the linked list', () => {
+    const ll = new LinkedList();
+    ll.append(1);
+    ll.append(3);
+    ll.append(8);
+    ll.append(2);
+
+    expect(ll.kthFromEnd(0)).toBe(2); // Tail element
+    expect(ll.kthFromEnd(2)).toBe(3); // Middle element
+  });
+
+  //! test 15: should throw an error when k is greater than the length of the linked list
+  it('should throw an error when k is greater than the length of the linked list', () => {
+    const ll = new LinkedList();
+    ll.append(1);
+    ll.append(3);
+    ll.append(8);
+    ll.append(2);
+
+    expect(() => ll.kthFromEnd(6)).toThrow('k is greater than the length of the linked list.');
+  });
+  
+  //! test 16: should throw an error when k is not a positive integer
+  it('should throw an error when k is not a positive integer', () => {
+    const ll = new LinkedList();
+    ll.append(1);
+    ll.append(3);
+    ll.append(8);
+    ll.append(2);
+
+    expect(() => ll.kthFromEnd(-1)).toThrow('k must be a positive integer.');
+    expect(() => ll.kthFromEnd(1.5)).toThrow('k must be a positive integer.');
+    expect(() => ll.kthFromEnd('2')).toThrow('k must be a positive integer.');
+  });
+  
+//! test 16: should return the node value when the linked list size is 1 and k is 0
+  it('should return the node value when the linked list size is 1 and k is 0', () => {
+    const ll = new LinkedList();
+    ll.append(1);
+
+    expect(ll.kthFromEnd(0)).toBe(1);
+  });
+
+  //! test 16: should return the node value when k is in the middle of the linked list
+  it('should return the node value when k is in the middle of the linked list', () => {
+    const ll = new LinkedList();
+    ll.append(1);
+    ll.append(3);
+    ll.append(8);
+    ll.append(2);
+    ll.append(5);
+
+    expect(ll.kthFromEnd(2)).toBe(8);
+  });
+});
+
 
 
