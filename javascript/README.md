@@ -10,7 +10,8 @@
 | 2      |[Array-insert](./arrays/array-insert-shift/README.md)         |
 | 3      |[Array-binary-search](./arrays//array-binary-search/README.md)|
 | 4      |[linked-list-insertions](./linked-list/index.js)              |
-|5       |[stack and queue](./stack-and-queue/README.md)
+| 5      |[stack and queue](./stack-and-queue/README.md)                |
+| 6      |[stack-queue-pseudo](./stack-queue-pseudo/README.md)          |
 
 ### Folder and Challenge Setup
 
