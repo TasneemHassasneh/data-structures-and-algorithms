@@ -12,6 +12,7 @@
 | 4      |[linked-list-insertions](./linked-list/index.js)              |
 | 5      |[stack and queue](./stack-and-queue/README.md)                |
 | 6      |[stack-queue-pseudo](./stack-queue-pseudo/README.md)          |
+| 7      |[stack-queue-brackets](./stack-queue-brackets/README.md)      |
 
 ### Folder and Challenge Setup
 
