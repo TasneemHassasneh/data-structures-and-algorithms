@@ -16,9 +16,10 @@
 Each depth first traversal method should return an array of values, ordered appropriately.
 
 ## Binary Search Tree
+
 * Binary Search Tree class
 
-*Sub-class  of the Binary Tree Class,* with the following additional methods:
+*Sub-class of the Binary Tree Class,* with the following additional methods:
 
     1. Add
         * Arguments: value
