@@ -42,6 +42,25 @@ class BinaryTree {
     traversal(this.root);
     return array;
   }
+
+  findMax() {
+    if (!this.root) {
+      console.error("Binary tree is empty.");
+    }
+
+    let max = this.root.value;
+
+    const traversal = (node) => {
+      if (node.value > max) {
+        max = node.value;
+      }
+      if (node.left) traversal(node.left);
+      if (node.right) traversal(node.right);
+    };
+
+    traversal(this.root);
+    return max;
+  }
 }
 
 
