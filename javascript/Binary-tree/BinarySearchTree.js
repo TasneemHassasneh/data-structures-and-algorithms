@@ -51,7 +51,7 @@ class BinarySearchTree extends BinaryTree {
 
   findMax() {
     if (!this.root) {
-      console.error('Binary search tree is empty.')
+      console.error("Binary search tree is empty.");
     }
 
     let current = this.root;
