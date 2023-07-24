@@ -10,9 +10,12 @@
 | 2      |[Array-insert](./arrays/array-insert-shift/README.md)         |
 | 3      |[Array-binary-search](./arrays//array-binary-search/README.md)|
 | 4      |[linked-list-insertions](./linked-list/index.js)              |
-| 5      |[stack and queue](./stack-and-queue/README.md)                |
-| 6      |[stack-queue-pseudo](./stack-queue-pseudo/README.md)          |
-| 7      |[stack-queue-brackets](./stack-queue-brackets/README.md)      |
+| 5      |[Fibonacci](./Fibonacci/README.md)                            |
+| 6      |[stack and queue](./stack-and-queue/README.md)                |
+| 7      |[stack-queue-pseudo](./stack-queue-pseudo/README.md)          |
+| 8      |[stack-queue-brackets](./stack-queue-brackets/README.md)      |
+| 9      |[Binary Tree](./Binary-tree/README.md)                        |
+| 10     |[Breadth First](./Breadth-First/README.md)                    |
 
 ### Folder and Challenge Setup
 
