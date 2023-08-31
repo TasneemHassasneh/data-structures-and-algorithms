@@ -16,7 +16,8 @@
 | 8      |[stack-queue-brackets](./stack-queue-brackets/README.md)      |
 | 9      |[Binary Tree](./Binary-tree/README.md)                        |
 | 10     |[Breadth First](./Breadth-First/README.md)                    |
-| 11     |[Fizz Buzz Tree](./tree-fizz-buzz/README.md)
+| 11     |[Fizz Buzz Tree](./tree-fizz-buzz/README.md)                  |
+|12 |[   |[Hash Table](./HashTable/README.md)
 
 ### Folder and Challenge Setup
 
