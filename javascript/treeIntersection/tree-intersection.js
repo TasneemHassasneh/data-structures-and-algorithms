@@ -43,3 +43,5 @@ tree2.right = new Node(4);
 
 const result = tree_intersection(tree1, tree2);
 console.log(result); 
+
+module.exports = tree_intersection;
